@@ -69,8 +69,20 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mi</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
+          <div class="theme-switch-wrapper darkmode-switch">
+            <i class="bi bi-moon moon"></i>
+            <em>Modo Oscuro</em>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+          </div>
         </ul>
       </nav><!-- .nav-menu -->
+
+      
+      
+
     </div>
   </header><!-- End Header -->
 
@@ -78,7 +90,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Gianluca Brunner</h1>
-      <p>Soy <span class="typed" data-typed-items="desarrollador FrontEnd"></span></p>
+      <p>Soy <span class="typed" data-typed-items="desarrollador FrontEnd, Freelancer"></span></p>
       <a href="./assets/pdf/Gianluca-Brunner-CV.pdf" download="Gianluca-Brunner-CV.pdf"><button class="btn btn-success btn-hero">Curriculum</button></a>
       <a target="_blank" href="https://www.linkedin.com/in/gianluca-brunner/"><button class="btn btn-success btn-hero">LinkedIn</button></a>
     </div>
@@ -92,15 +104,15 @@
 
         <div class="section-title">
           <h2>Sobre mi</h2>
-          <p>Soy un desarrollador trainee autodidacta muy dedicado e interesado en el mundo de la programación, con compromiso y ganas
-            de involucrarme completamente en todas las tareas requeridas, apasionado por el cambio, la colaboración y la mejora continua.
-            Actualmente utilizo JavaScript, React, TypeScript y Angular para desarrollo y Sass, Bootstrap, Material-UI, TailwindCSS y Skeleton como
-            frameworks de desarrollo.</p>
+            <p>Soy un desarrollador trainee autodidacta, dedicado e interesado en el mundo de la programación, con compromiso y
+            ganas de involucrarme completamente en todas las tareas requeridas.
+            Actualmente, utilizo JavaScript y React para desarrollo; me encuentro estudiando TypeScript y Angular; uso Sass como
+            preprocesador de CSS, y Bootstrap, Material-UI, TailwindCSS y Skeleton como frameworks de CSS.</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/about-me.png" class="img-fluid" alt="">
+          <div class="col-lg-4 about-profile" data-aos="fade-right">
+            <img src="assets/img/about-me.png" class="img-fluid" id="about-profile-pic" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <div class="row">
@@ -120,15 +132,9 @@
               </div>
             </div>
             <p>
-                Actualmente me encuentro con gran entusiasmo
-                en búsqueda de mi primer oportunidad como
-                desarrollador para poner en practica lo
-                aprendido día a día en los proyectos propios
-                que pueden ser observados en la seccion de portfolio.
-                Intento siempre superarme realizando desafios, así
-                sean de diferentes sitios webs como Hackerrank o tendencias de redes sociales
-                entre programadores que luego me interesa publicar en mi perfil de LinkedIn,
-                como por ejemplo daily challenges.
+                Presentemente me encuentro en búsqueda de mi primer oportunidad como desarrollador para poner en práctica los
+                conocimientos adquiridos que he utilizado en proyectos propios, los cuales pueden ser observados en la sección de
+                portfolio.
             </p>
             <a href="./assets/pdf/Gianluca-Brunner-CV.pdf" download="Gianluca-Brunner-CV.pdf"><button class="btn btn-success btn-hero">Descargar CV</button></a>
           </div>
@@ -142,8 +148,8 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-        <p>Acá se pueden ver los proyectos que más relevantes, categorizados por un filtro según la tecnologia más usada.</p>
-        <p class="portfolio-paragraph">Al clickear, se encuentran como opciones una vista previa del proyecto y un enlace que lleva al detalle del mismo.</p>
+        <p>Acá se pueden ver los proyectos más relevantes, categorizados por un filtro según la tecnologia usada.</p>
+        <p class="portfolio-paragraph">Al presionar, se encuentran como opciones una vista previa del proyecto y un enlace que lleva al detalle del mismo.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -260,10 +266,10 @@
 
         <div class="section-title">
           <h2>Contacto</h2>
-          <p>No dudes en contactarme si estás interesado o interesada en mi perfil; desde ya te agradezco el tiempo invertido acá.</p>
+          <p>No dudes en contactarme si estás interesado o interesada en mi perfil; desde ya te agradezco el tiempo invertido en mi portfolio.</p>
         </div>
 
-        <div class="row" data-aos="fade-in">
+        <div class="row contact-blocks" data-aos="fade-in">
 
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
@@ -332,8 +338,14 @@
 
   </main><!-- End #main -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- <footer id="footer">
+        <div class="container">
+            
+        </div>
+    </footer> -->
 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

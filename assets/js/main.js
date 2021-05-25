@@ -201,10 +201,59 @@
     })
   });
 
+    /* Form Reset */
   window.onbeforeunload = () => {
     for(const form of document.getElementsByTagName('form')) {
       form.reset();
     }
-  }  
+  }
+  
+  /* DarkMode */
 
+  const dmode = document.querySelector('#checkbox');
+  const toggleSwitch = document.querySelector('input[type="checkbox"]');
+  const profilePic = document.querySelector('#about-profile-pic');
+  const body = document.querySelector('body');
+
+  loadDarkmode();
+
+  dmode.addEventListener('click', e => {
+    body.classList.toggle('darkmode');
+    storeDarkmode(body.classList.contains('darkmode'));
+    if(body.classList.contains('darkmode')){
+        transitionImage2();
+    }else{
+        transitionImage();
+    }
+    
+  });
+
+  function loadDarkmode(){
+    const darkmode = localStorage.getItem('darkmode');
+
+    if(!darkmode){
+        storeDarkmode('false');
+        transitionImage();
+    }else if(darkmode == 'true'){
+        body.classList.add('darkmode');
+        toggleSwitch.checked = true;
+        transitionImage2();
+    }
+  }
+
+  function storeDarkmode(value, profile){
+    localStorage.setItem('darkmode', value);
+  }
+
+    function transitionImage(){
+        setTimeout(() => {
+            profilePic.src = "./assets/img/about-me.png";
+        }, 90);
+    }
+
+    function transitionImage2(){
+        setTimeout(() => {
+            profilePic.src = "./assets/img/about-me-dark.png";
+        }, 90);
+    }
 })()
