@@ -247,13 +247,13 @@
 
     function transitionImage(){
         setTimeout(() => {
-            profilePic.src = "./assets/img/about-me.jgp";
+            profilePic.src = "./assets/img/about-me.jpg";
         }, 90);
     }
 
     function transitionImage2(){
         setTimeout(() => {
-            profilePic.src = "./assets/img/about-me-dark.jgp";
+            profilePic.src = "./assets/img/about-me-dark.jpg";
         }, 90);
     }
 
