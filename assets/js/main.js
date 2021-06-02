@@ -208,52 +208,166 @@
     }
   }
   
-  /* DarkMode */
+    /* DarkMode */
 
-  const dmode = document.querySelector('#checkbox');
-  const toggleSwitch = document.querySelector('input[type="checkbox"]');
-  const profilePic = document.querySelector('#about-profile-pic');
-  const body = document.querySelector('body');
+    const dmode = document.querySelector('#checkbox');
+    const toggleSwitch = document.querySelectorAll('input[type="checkbox"]');
+    const profilePic = document.querySelector('#about-profile-pic');
+    const body = document.querySelector('body');
 
-  loadDarkmode();
-
-  dmode.addEventListener('click', e => {
-    body.classList.toggle('darkmode');
-    storeDarkmode(body.classList.contains('darkmode'));
-    if(body.classList.contains('darkmode')){
-        transitionImage2();
-    }else{
-        transitionImage();
-    }
+    loadDarkmode();
     
-  });
+    dmode.addEventListener('click', e => {
+        body.classList.toggle('darkmode');
+        storeDarkmode(body.classList.contains('darkmode'));
+        if(body.classList.contains('darkmode')){
+            transitionImage2();
+        }else{
+            transitionImage();
+        }
 
-  function loadDarkmode(){
-    const darkmode = localStorage.getItem('darkmode');
+    });
 
-    if(!darkmode){
-        storeDarkmode('false');
-        transitionImage();
-    }else if(darkmode == 'true'){
-        body.classList.add('darkmode');
-        toggleSwitch.checked = true;
-        transitionImage2();
+    function loadDarkmode(){
+        const darkmode = localStorage.getItem('darkmode');
+
+        if(!darkmode){
+            storeDarkmode('false');
+            transitionImage();
+        }else if(darkmode == 'true'){
+            body.classList.add('darkmode');
+            toggleSwitch[0].checked = true;
+            transitionImage2();
+        }
     }
-  }
 
-  function storeDarkmode(value, profile){
-    localStorage.setItem('darkmode', value);
-  }
+    function storeDarkmode(value, profile){
+        localStorage.setItem('darkmode', value);
+    }
 
     function transitionImage(){
         setTimeout(() => {
-            profilePic.src = "./assets/img/about-me.png";
+            profilePic.src = "./assets/img/about-me.jgp";
         }, 90);
     }
 
     function transitionImage2(){
         setTimeout(() => {
-            profilePic.src = "./assets/img/about-me-dark.png";
+            profilePic.src = "./assets/img/about-me-dark.jgp";
         }, 90);
     }
-})()
+
+  /* Language
+
+    /* Using the querySelectorAll for the toggleSwitch
+    const langswitch = document.querySelector('#checkbox-lang');
+    /* const textLang = document.querySelector('#text-lang');
+
+
+    /* loadLang();
+
+    /* langswitch.addEventListener('click', e => {
+    /*     body.classList.toggle('lang-english');
+    /*     storeLang(body.classList.contains('lang-english'));
+    /*     if(body.classList.contains('lang-english')){
+    /*         setTimeout(() => {
+    /*             textLang.innerText = 'English mode';
+    /*         }, 140);
+    /*     }else{
+    /*         setTimeout(() => {
+    /*             textLang.innerText = 'Modo inglés';
+    /*         }, 140);
+    /*     }
+    /* })
+
+    /* function storeLang(value, profiel){
+    /*     localStorage.setItem('lang-english', value);
+    /* }
+
+    /* function loadLang(){
+    /*     const langswitch = localStorage.getItem('lang-english');
+
+    /*     if(!langswitch){
+    /*         storeLang('false');
+    /*     }else if(langswitch == 'true'){
+    /*         body.classList.add('lang-english');
+    /*         toggleSwitch[1].checked = true;
+    /*         textLang.innerText = 'English mode';
+    /*     }
+    /* }
+
+    const inicio = document.querySelector('#inicio');
+    const attr = langswitch.getAttribute('language');
+    console.log(attr);
+    loadLang();
+
+    langswitch.addEventListener('click', e => {
+        
+        body.classList.toggle('lang-english');
+        storeLang(body.classList.contains('lang-english'));
+        
+        if(body.classList.contains('lang-english')){
+            
+            langswitch.setAttribute('language', 'english');
+            const attr = langswitch.getAttribute('language');
+            localStorage.setItem("language", attr);
+            inicio.textContent = data[attr].inicio;
+        }else{
+            /* storeLang(body.classList.contains('lang-english'));
+            langswitch.setAttribute('language', 'spanish');
+            const attr = langswitch.getAttribute('language');
+            localStorage.setItem("language", attr);
+            inicio.textContent = data[attr].inicio;
+        }
+
+        console.log(attr);
+    });
+
+    function storeLang(value){
+        localStorage.setItem('lang-english', value);
+    }
+    
+    function loadLang(){
+        const langswitch = localStorage.getItem('lang-english');
+        const langStored = localStorage.getItem('language');
+        console.log(data);
+
+        if(!langswitch){
+            storeLang('false');
+            if(langStored == "spanish"){
+                langswitch.setAttribute('language', 'spanish');
+            }
+        }else if(langswitch == 'true'){
+            body.classList.add('lang-english');
+            toggleSwitch[1].checked = true;
+            if(langStored == "english"){
+                langswitch.setAttribute('language', 'english');
+            }
+            inicio.textContent = data[english].inicio;
+        }
+
+        var data = {
+            "english": 
+            {
+              "inicio": "Start",
+            },
+            "spanish":
+            {
+              "inicio": "Inicio"
+            }
+        }
+    }
+
+    var data = {
+        "english": 
+        {
+          "inicio": "Start",
+        },
+        "spanish":
+        {
+          "inicio": "Inicio"
+        }
+    } */
+
+})();
+

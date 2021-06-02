@@ -54,7 +54,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-picture.png" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/profile-picture.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Gianluca Brunner</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://github.com/gianbr" target="_blank" class="twitter"><i class="bx bxl-github"></i></a>
@@ -65,10 +65,11 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span id="inicio">Inicio</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mi</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
+
           <div class="theme-switch-wrapper darkmode-switch">
             <i class="bi bi-moon moon"></i>
             <em>Modo Oscuro</em>
@@ -77,10 +78,19 @@
                 <div class="slider round"></div>
             </label>
           </div>
+          <!-- <div class="theme-switch-wrapper darkmode-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="26" fill="currentColor" class="bi bi-translate moon" viewBox="0 0 16 16">
+                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+              </svg>
+            <em id="text-lang">Modo inglés</em>
+            <label class="theme-switch" for="checkbox-lang">
+                <input type="checkbox" id="checkbox-lang" language='spanish'/>
+                <div class="slider round"></div>
+            </label>
+          </div> -->
         </ul>
       </nav><!-- .nav-menu -->
-
-      
       
 
     </div>
@@ -103,7 +113,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Sobre mi</h2>
+          <h2>Sobre mi <i class="bi bi-translate"></i></h2>
             <p>Soy un desarrollador trainee autodidacta, dedicado e interesado en el mundo de la programación, con compromiso y
             ganas de involucrarme completamente en todas las tareas requeridas.
             Actualmente, utilizo JavaScript y React para desarrollo; me encuentro estudiando TypeScript y Angular; uso Sass como
@@ -112,7 +122,7 @@
 
         <div class="row">
           <div class="col-lg-4 about-profile" data-aos="fade-right">
-            <img src="assets/img/about-me.png" class="img-fluid" id="about-profile-pic" alt="">
+            <img src="assets/img/about-me.jpg" class="img-fluid" id="about-profile-pic" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <div class="row">
@@ -125,9 +135,9 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>23</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span>gianbrunner1@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Experiencia:</strong> <span>Trainee</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span>gianbrunner1@gmail.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Experiencia:</strong> <span>Trainee</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Idiomas:</strong> <span>Español nativo e Inglés B2 (intermedio)</span></li>
                 </ul>
               </div>
             </div>
@@ -167,9 +177,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-react">
             <div class="portfolio-wrap">
-              <img src="./assets/img/portfolio/portfolio-quotes-cover.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/portfolio-quotes-cover.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="./assets/img/portfolio/portfolio-quotes3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Quotes App"><i class="bx bx-plus"></i></a>
+                <a href="./assets/img/portfolio/portfolio-quotes3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Quotes App"><i class="bx bx-plus"></i></a>
                 <a href="./portfolio-details/portfolio-quotes-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -177,9 +187,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-javascript">
             <div class="portfolio-wrap">
-              <img src="./assets/img/portfolio/portfolio-cart-cover.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/portfolio-cart-cover.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="./assets/img/portfolio/portfolio-cart.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Plantilla funcional de carrito"><i class="bx bx-plus"></i></a>
+                <a href="./assets/img/portfolio/portfolio-cart.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Plantilla funcional de carrito"><i class="bx bx-plus"></i></a>
                 <a href="./portfolio-details/portfolio-cart-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -187,9 +197,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-angular">
             <div class="portfolio-wrap">
-              <img src="./assets/img/portfolio/portfolio-todo-cover.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/portfolio-todo-cover.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="./assets/img/portfolio/portfolio-todo2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="To-do App"><i class="bx bx-plus"></i></a>
+                <a href="./assets/img/portfolio/portfolio-todo2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="To-do App"><i class="bx bx-plus"></i></a>
                 <a href="./portfolio-details/portfolio-todo-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -197,9 +207,9 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-angular">
             <div class="portfolio-wrap">
-              <img src="./assets/img/portfolio/portfolio-quiz-cover.png" class="img-fluid" alt="">
+              <img src="./assets/img/portfolio/portfolio-quiz-cover.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="./assets/img/portfolio/portfolio-quiz1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Quiz App"><i class="bx bx-plus"></i></a>
+                <a href="./assets/img/portfolio/portfolio-quiz1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Quiz App"><i class="bx bx-plus"></i></a>
                 <a href="./portfolio-details/portfolio-quiz-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -209,7 +219,7 @@
             <div class="portfolio-wrap">
               <img src="https://via.placeholder.com/800x600" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/800x600.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/800x600.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -219,7 +229,7 @@
             <div class="portfolio-wrap">
               <img src="https://via.placeholder.com/800x600" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/800x600.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/800x600.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -229,7 +239,7 @@
             <div class="portfolio-wrap">
               <img src="https://via.placeholder.com/800x600" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/800x600.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/800x600.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -239,7 +249,7 @@
             <div class="portfolio-wrap">
               <img src="https://via.placeholder.com/800x600" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/800x600.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/800x600.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -249,7 +259,7 @@
             <div class="portfolio-wrap">
               <img src="https://via.placeholder.com/800x600" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/800x600.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/portfolio/800x600.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -358,7 +368,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

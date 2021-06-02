@@ -674,7 +674,6 @@ section {
 
 .contact .php-email-form textarea {
   padding: 10px 15px;
-  background: ;
 }
 
 @-webkit-keyframes animate-loading {
@@ -795,6 +794,7 @@ input:checked + .slider:before {
 
 .slider.round {
     border-radius: 34px;
+    justify-content: flex-end;
 }
 
 .slider.round:before {
