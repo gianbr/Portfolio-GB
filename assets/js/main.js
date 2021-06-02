@@ -247,14 +247,14 @@
 
     function transitionImage(){
         setTimeout(() => {
-            profilePic.src = "./assets/img/about-me.jpg";
-        }, 90);
+            profilePic.src = "./assets/img/about-me.webp";
+        }, 35);
     }
 
     function transitionImage2(){
         setTimeout(() => {
-            profilePic.src = "./assets/img/about-me-dark.jpg";
-        }, 90);
+            profilePic.src = "./assets/img/about-me-dark.webp";
+        }, 35);
     }
 
   /* Language
